@@ -1,0 +1,138 @@
+<style>
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color: #4CAF50;
+}
+</style>
+{{> contendDisplay}}
+    
+    <div class="blog">
+		<div class="container">
+			<div class="reply heading">
+      {{#if list3 }}
+             {{#each list3}} 
+                       <h3 align="center"> {{title}}</h3><br>
+               {{/each}} 
+      {{/if}}
+
+           {{#if list }}
+                     {{#each list}} 
+                     <div class="imgtake">
+                      <img class="imgtake" src="../uploads/{{imagename}}"  /> 
+                </div>
+                 {{/each}} 
+                  
+
+                {{/if}}
+			</div>
+		</div>
+	</div>			
+<style>
+.imgtake img{
+  border-spacing: 1px;
+  float: left;
+  border: 15px;
+  margin-left: 60px;
+  margin-bottom: 10px;
+}
+</style>
+
+
+
+  <style>
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color: #4CAF50;
+}
+</style>
+<div class="container">
+      <div class="reply heading">
+
+        <div class="reply-btm">
+        <form method="POST" action="/contendants">
+          {{!-- <input type="text" name="name" placeholder="Voter Name"> --}}
+        {{#if list1 }}
+            {{#each list1}} 
+          <input type="hidden" name="user" value="{{user}}" />
+          {{/each}}
+        {{/if}}
+          {{!-- <input type="text" name="email" placeholder="Voter Email">
+          <input type="text" name="ph" placeholder="Voter Phone No"> --}}
+          <div class="submit-btn">
+            <input type="submit" class="btn" value="Click To Vote" name="submit">
+          </div>
+        </form> 
+        </div>
+      </div>
+    </div>
+<div class="container">
+			<div class="reply heading">
+				<div class="reply-btm">
+           {{#if countRecord }}
+            <div class="alert alert-success" role="alert">
+						<strong>Total Vote &nbsp;</strong> {{countRecord}}
+				   </div>
+           {{/if}}
+  </div>
+</div>
+</div>	
+
+     {{#if msg}}
+          <div class="alert alert-success" role="alert">
+						<strong>Well done!</strong> {{msg}}
+				   </div>
+           {{else}}
+					 {{msg}}
+      {{/if}} 
+    {{!-- <div class="blog"> --}}
+    
+		<script>
+      const btn = document.querySelector('.btn');
+      btn.style.background = 'red';
+    </script>

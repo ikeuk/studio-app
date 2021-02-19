@@ -1,0 +1,58 @@
+<style>
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color: #4CAF50;
+}
+</style>
+{{> admin_nav}}
+    
+    <div class="blog">
+		<div class="container">
+			<div class="reply heading">
+				<h3>Contending Clients</h3>
+                  {{#if list }}
+
+                     {{#each list}} 
+<div class="imgtake">
+ <p class="place">{{name}}&nbsp;&nbsp;&nbsp;<a href="/deleteContendant/{{_id}}">Delete</a></p>
+   <a href="/contendantUploadPage/{{_id}}"><img src="./uploads/{{imagename}}" height="200vh"/></a>
+   
+</div>
+                 {{/each}}
+
+                 {{/if}}
+			</div>
+		</div>
+	</div>		
+
+<style>
+    .imgtake {
+      padding: 2px;
+      display: inline;
+      justify-content: space-between;
+      float: left;
+    }
+</style>  	

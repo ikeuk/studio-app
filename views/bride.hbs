@@ -1,0 +1,51 @@
+	<!--gallery-starts-->
+	<div class="gallery">
+		<div class="container">
+			<div class="gallery-top heading">
+				<h2>Our Bride</h2>
+			</div> 
+            {{#if list }}
+			<div class="gallery-bottom">
+                  {{!-- {{#each list}}
+				<div class="g-1">
+					<div class="col-md-6 g-left">
+						<a class="example-image-link mask" href="./uploads/{{imagename}}" data-lightbox="example-set" data-title=""><img class="example-image zoom-img" src="./uploads/{{imagename}}" alt=""/></a>		
+					</div>
+					<div class="col-md-3 g-right">
+						<a class="example-image-link mask" href="images/g-2.jpg" data-lightbox="example-set" data-title=""><img class="example-image zoom-img" src="images/g2.jpg" alt=""/></a>	
+					</div>
+					<div class="col-md-3 g-right">						
+						<a class="example-image-link mask" href="images/g-4.jpg" data-lightbox="example-set" data-title=""><img class="example-image zoom-img" src="images/g4.jpg" alt=""/></a>								
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+                 {{/each}} --}}
+
+                 
+                  {{#each list}} 
+				 <div class="g-2">
+					<div class="col-md-3 g-right">
+						<a class="example-image-link mask" href="./uploads/{{imagename}}" data-lightbox="example-set" data-title=""><img class="example-image zoom-img" src="./uploads/{{imagename}}" alt="" /></a>
+						<div class="g1">
+							<a class="example-image-link mask" href="./uploads/{{imagename}}" data-lightbox="example-set" data-title=""><img class="example-image zoom-img" src="./uploads/{{imagename}}" alt="" /></a>
+						</div>
+					</div>
+					<div class="col-md-6 g-left">
+						<a class="example-image-link mask" href="./uploads/{{imagename}}" data-lightbox="example-set" data-title=""><img class="example-image zoom-img" src="./uploads/{{imagename}}" alt="" /></a>	
+					</div>
+					<div class="clearfix"> </div>
+				</div> 
+              {{/each}}
+			</div>
+            {{/if}}
+		</div>
+	</div>
+	<!--gallery-end-->
+	<script src="js/jquery.chocolat.js"></script>
+		<link rel="stylesheet" href="css/chocolat.css" type="text/css" media="screen">
+		<!--light-box-files -->
+		<script type="text/javascript">
+		$(function() {
+			$('.gallery-bottom a').Chocolat();
+		});
+	</script>

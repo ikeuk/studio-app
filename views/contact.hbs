@@ -1,0 +1,48 @@
+<!--contact-starts-->
+	<div class="contact">
+		<div class="container">
+			<div class="contact-top heading">
+				<h2>Contact Us</h2>
+			</div>
+			<div class="contact-top-top">
+              <div class="container">
+			<div class="reply heading">
+				<div class="reply-btm">
+           {{#if msg }}
+            <div class="alert alert-success" role="alert">
+						<strong></strong> {{msg}}
+				   </div>
+           {{/if}}
+  </div>
+</div>
+</div>	
+			<div class="col-md-8 contact-bottom">
+				<form method="POST" action="contact">
+					<input type="text" name="name" placeholder="Name">
+					<input type="text" name="email" placeholder="Email">
+					<input type="text" name="phone" placeholder="Phone">
+					<textarea name="msg" placeholder="Message" required></textarea>
+					<div class="submit-btn">
+						<input type="reset" value="Clear">
+						<input type="submit" value="SUBMIT">
+					</div>
+				</form>
+			</div>
+			<div class="col-md-4 contact-in">
+						<h3>Get In Touch With Us</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+						<div class="address-grid">
+							<h5>Address</h5>
+							<p><b>Lorem ipsum dolor</b></p>
+							<p>TL 19034-88974</p>
+							<a href="mailto:mail@example.com">Contact@example.com</a>
+					
+				      </div>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+		</div>
+	</div>	
+	<!--contact-end-->
+	<!--map-starts-->
+	

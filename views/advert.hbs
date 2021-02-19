@@ -1,0 +1,252 @@
+
+<!DOCTYPE html> 
+<html>
+<head>
+<title>Tophas | imagine possibilities</title>
+<link href="/css/bootstrap.css" type="text/css" rel="stylesheet" media="all">
+<link href="/css/style.css" type="text/css" rel="stylesheet" media="all">
+<!--Custom-Theme-files-->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Charm Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
+	Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!--//Custom-Theme-files-->
+<!--js-->
+<script src="/js/jquery-1.11.1.min.js"></script> 
+<!--//js-->
+<!--start-smoth-scrolling-->
+<script type="text/javascript" src="/js/move-top.js"></script>
+<script type="text/javascript" src="/js/easing.js"></script>
+<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){		
+					event.preventDefault();
+					$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+				});
+			});
+		</script>
+<!--start-smoth-scrolling-->
+</head>
+<body>
+	<!--banner-starts-->
+	 {{#if list }}
+	<div class="banner" id="home">
+
+
+				<ul class="cb-slideshow">
+			 {{#each list}}
+			<li>
+				<span><img src="./uploads/{{imagename}}" alt="" /></span>
+				<div>
+					<h3>{{title}}</h3>
+						<h3>{{description}}</h3>
+				</div>
+			</li>
+		 {{/each}}
+		
+		</ul>
+		<!--header-->		
+		<div class="header">
+				<div class="logo">
+					<h1><a href="/">Tophas<img src="images/d.png" alt="" /></a></h1>
+					
+				</div>
+				<div class="navigation">
+					<span class="menu"></span> 
+					<div class="col-md-3 footer-left">
+							<ul>
+								<li><a href="/"><span> </span>Home</a></li>
+							</ul>
+					</div>
+				</div>
+				
+				</div>
+				<div class="clearfix"></div>
+				<div class="social">
+					<ul>
+						<li><a href="#"><span class="fb"></span></a></li>
+						<li><a href="#"><span class="twit"></span></a></li>
+						<li><a href="#"><span class="google"></span></a></li>
+					</ul>
+				</div>
+		</div>
+		<!--//header-->
+	</div>
+	  {{/if}}
+	<!--banner-starts-->
+	<!--script-for-menu-->
+		<script>
+			$("span.menu").click(function(){
+				$(" ul.navig").slideToggle("slow" , function(){
+				});
+			});
+		</script>
+	<!--script-for-menu-->
+	<!--bnr-starts-->
+	<div class="bnr grid">
+		<div class="col-md-3 bnr-left">
+			<figure class="effect-oscar">
+				<img src="images/b1.jpg" alt=""/>
+				<figcaption>
+					<h3>Sed id dolor</h3>
+					<p>Vestibulum mollis mollis elit nec ullamcorper</p>
+				</figcaption>			
+			</figure>
+		</div> 
+		<div class="col-md-3 bnr-left">
+			<figure class="effect-oscar">
+				<img src="images/b6.jpg" alt=""/>
+				<figcaption>
+					<h3>Sed id dolor</h3>
+					<p>Vestibulum mollis mollis elit nec ullamcorper</p>
+				</figcaption>			
+			</figure>
+		</div>
+		<div class="col-md-3 bnr-left">
+			<figure class="effect-oscar">
+				<img src="images/b3.jpg" alt=""/>
+				<figcaption>
+					<h3>Sed id dolor</h3>
+					<p>Vestibulum mollis mollis elit nec ullamcorper</p>
+				</figcaption>			
+			</figure>
+		</div>
+		<div class="col-md-3 bnr-left">
+			<figure class="effect-oscar">
+				<img src="images/b5.jpg" alt=""/>
+				<figcaption>
+					<h3>Sed id dolor</h3>
+					<p>Vestibulum mollis mollis elit nec ullamcorper</p>
+				</figcaption>			
+			</figure>
+		</div>
+		<div class="clearfix"></div>
+	</div>
+	<!--bnr-end-->
+	<!--welcome-starts-->
+	<div class="welcome">
+		<div class="container">
+			<div class="welcomr-top heading">
+				<h2>Welcome</h2>
+				<p>Vivamus hendrerit convallis mi, quis tristique tellus finibus a. Sed sagittis justo vel porttitor viverra. Sed sit amet ante at eros sollicitudin vehicula. Integer vitae pellentesque lorem, et vehicula sem.</p>
+			</div>
+			<div class="welcomr-bottom">
+				<div class="col-md-4 welcome-left">
+					<a href="single.html" class="mask"><img class="zoom-img" src="images/w4.jpg" title="name" alt="" /></a>
+				</div> 
+				<div class="col-md-4 welcome-left">
+					<a href="single.html" class="mask"><img class="zoom-img" src="images/w2.jpg" title="name" alt="" /></a>
+				</div>
+				<div class="col-md-4 welcome-left">
+					<a href="single.html" class="mask"><img class="zoom-img" src="images/w3.jpg" title="name" alt="" /></a>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+		</div>
+	</div>
+	<!--welcome-starts-->
+	<!--fashion-starts-->
+	<div class="fashion">
+		<div class="container">
+			<div class="fashion-top">
+				<div class="col-md-6 fashion-left">
+					<img src="images/g4.png" alt=""/>
+				</div>
+				<div class="col-md-6 fashion-right heading">
+					<h3>Perfect experience</h3>
+					<p>Integer a massa ac tellus ultricies facilisis eget et nisl. Nam feugiat, dolor id ornare pellentesque, ex ex sollicitudin mauris, id aliquet mauris mi in erat. In congue pellentesque eleifend. Donec ultrices neque eget lectus venenatis consequat.</p>
+					<div class="f-btn">
+						<a href="single.html">Readmore</a>
+					</div>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+		</div>
+	</div>
+	<!--fashion-starts-->
+
+	<!--gallery-end-->
+	<script src="/js/jquery.chocolat.js"></script>
+		<link rel="stylesheet" href="/css/chocolat.css" type="text/css" media="screen">
+		<!--light-box-files -->
+		<script type="text/javascript">
+		$(function() {
+			$('.profile-left a').Chocolat();
+		});
+		</script>
+	<!--top-starts-->
+	<!--add-starts-->
+	<div class="add">
+		<div class="container">
+			<div class="add-top heading">
+				<h3>Our Advantages</h3>
+			</div>
+			<div class="add-bottom">
+				<div class="add-one">
+					<div class="col-md-6 add-left">
+						<div class="ad-left">
+							<a href="single.html"><img src="images/add1.png" alt="" /></a>
+						</div>
+						<div class="ad-right">
+							<a href="single.html"><h4>Donec ultrices neque eget</h4></a>
+							<p>Proin congue metus mi, nec tempor tellus consectetur eget. Cum sociis natoque penatibus et magnis dis parturient montes.</p>
+							<div class="ad-btn">
+								<a href="single.html">Readmore</a>
+							</div>
+							<span></span>
+						</div>
+						<div class="clearfix"></div>
+					</div>
+					<div class="col-md-6 add-left">
+						<div class="ad-left">
+							<a href="single.html"><img src="images/add2.png" alt="" /></a>
+						</div>
+						<div class="ad-right">
+							<a href="single.html"><h4>In hac habitasse platea</h4></a>
+							<p>Proin congue metus mi, nec tempor tellus consectetur eget. Cum sociis natoque penatibus et magnis dis parturient montes.</p>
+							<div class="ad-btn">
+								<a href="single.html">Readmore</a>
+							</div>
+							<span></span>
+						</div>
+						<div class="clearfix"></div>
+					</div>
+					<div class="clearfix"></div>
+				</div>
+				<div class="add-two">
+					<div class="col-md-6 add-left">
+						<div class="ad-left">
+							<a href="single.html"><img src="images/add3.png" alt="" /></a>
+						</div>
+						<div class="ad-right">
+							<a href="single.html"><h4>Aliquam ac urna ac turpis</h4></a>
+							<p>Proin congue metus mi, nec tempor tellus consectetur eget. Cum sociis natoque penatibus et magnis dis parturient montes.</p>
+							<div class="ad-btn">
+								<a href="single.html">Readmore</a>
+							</div>
+							<span></span>
+						</div>
+						<div class="clearfix"></div>
+					</div>
+					<div class="col-md-6 add-left">
+						<div class="ad-left">
+							<a href="single.html"><img src="images/add4.png" alt="" /></a>
+						</div>
+						<div class="ad-right">
+							<a href="single.html"><h4>Vivamus nec semper lacus</h4></a>
+							<p>Proin congue metus mi, nec tempor tellus consectetur eget. Cum sociis natoque penatibus et magnis dis parturient montes.</p>
+							<div class="ad-btn">
+								<a href="single.html">Readmore</a>
+							</div>
+							<span></span>
+						</div>
+						<div class="clearfix"></div>
+					</div>
+					<div class="clearfix"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--add-end-->
+	
